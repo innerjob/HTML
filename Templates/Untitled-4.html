@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="js/slide.js"></script>
+<style>
+#header {
+	color: #090;
+	text-align: left;
+	height: 150px;
+	margin: 10px;
+}
+#nav {
+	height: 100px;
+	display: block;
+	margin: 10px;
+	z-index: 100;
+	position: relative;
+	background-color:#2ABFAA
+}
+#content {
+	color: #D6D6D6;
+	height: 1000px;
+	margin: 10px;
+	display: block;
+	z-index: 1;
+}
+#leftcontent {
+	color: #D6D6D6;
+	height: 900px;
+	margin: 0px;
+	width: 80%;
+	float: left;
+	display: block;
+	z-index: 1;
+}
+#rightcontent {
+	olor: #D6D6D6;
+	height: 900px;
+	width: 19%;
+	float: right;
+}
+#footer {
+	color: #D6D6D6;
+	background-color: #06C;
+	height: 100px;
+	margin: 10px;
+	
+}
+			#navigation{
+				margin-left: 155px;
+			}
+			#navigation li ul {
+	list-style-type: none;
+	background-color: #2ABFAA
+			} 
+			#navigation li {
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	height: 53px;
+	width: 150px;
+	display: block;
+	background-color: #2ABFAA
+			} 
+			#navigation li a:hover {
+	color: #FCF;
+	background: #2687eb;
+			} 
+			#navigation li ul li a:hover { 
+			color:#fff; 
+			background:#6b839c; 
+			} 
+			#navigation li ul { 
+			display:none; 
+			position:absolute; 
+			top:40px; 
+			left:0;  
+			width:120px; 
+			} 
+  #leftcontent-bottom{
+	  
+	height: 450px;
+	width: 500px;
+	position:relative;
+	}
+	
+			 #leftcontent-top h3{
+				 float:left;
+				 width:160px;
+				 }
+		 #leftcontent-top div{
+	clear: both;
+	height: 150px;
+	display: none;
+			 }
+			.imgs li{
+	float: left;
+	position: relative;
+	list-style-type: none;
+	background-color: #FFC
+			}
+			li img{
+				width:180px;
+				height:300px;
+				
+				}
+				#leftcontent-top DIV.selectTag {DISPLAY: block}
+				 hr{
+					  width:1px;
+					  color: #333;
+					  margin-top:30px
+					 }
+					 li a{ text-decoration:none}
+</style>
+
+</head>
+
+<body  background-color="YELLOW">
+<div id="header"><img src="images/header.jpg" width="1270px" height="200"></div>
+<div id="nav">
+  <ul id="navigation"> 
+     
+   	 	<h2><a href="#">电脑办公分类</a> </h2>
+    
+    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" > 
+      <a href="#">电脑整机</a> 
+      <ul> 
+      <li><a href="#">宏碁</a></li> 
+      <li><a href="#">华硕</a></li> 
+      <li><a href="#">学生笔记本</a></li> 
+      <li><a href="#">超薄本</a></li> 
+      <li><a href="#">外星人</a></li> 
+      </ul> 
+    </li> 
+    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+      <a href="#">电脑配件</a> 
+      <ul> 
+     <li> <a href="#">组装电脑</a></li> 
+      <li><a href="#">cpu</a></li> 
+      <li><a href="#">主板</a></li> 
+      <li><a href="#">显卡</a></li> 
+      <li><a href="#">硬盘</a></li> 
+      <li><a href="#">其它</a></li> 
+      </ul> 
+    </li> 
+       <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+      <a href="#">网络产品</a> 
+      <ul> 
+     <li> <a href="#">路由器</a></li> 
+      <li><a href="#">网卡</a></li> 
+      <li><a href="#">交换机</a></li> 
+      <li><a href="#">网络存储</a></li> 
+      <li><a href="#">4G/3G上网</a></li> 
+      <li><a href="#">其它</a></li> 
+      </ul> 
+    </li> 
+    <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"> 
+    <a href="#">外设产品</a> 
+    <ul> 
+    <li><a href="#">鼠标</a></li> 
+    <li><a href="#">键盘</a></li> 
+    <li><a href="#">移动硬盘</a></li>
+    <li><a href="#">电脑清洁</a></li> 
+    </ul> 
+    </li> 
+  </ul>  
+    </li> 
+    </ul> 
+</div>
+<div id="content">  
+  <div id="leftcontent">
+   			 <div id="leftcontent-top">
+               <h3 onMouseover="selectTag('tagContent0',this)"><a href="#">今日特价</a></h3>
+               <h3 onMouseover="selectTag('tagContent1',this)"><a href="#">最新降价</a></h3>
+               <h3 onMouseover="selectTag('tagContent2',this)"><a href="#">新品推荐</a></h3>
+               <h3 onMouseover="selectTag('tagContent3',this)"><a href="#">人气明星</a></h3>
+                              
+                              <div class="tagContent selectTag" id=tagContent0>
+                              		<ul class="imgs">  
+                                    <li><img src="images/1.png"></li>
+                                    <li><hr size=150></li>
+                                    <li><img src="images/2.png"></li>
+                                    <li><hr size=150></li>
+                                    <li><img src="images/3.png"></li>
+                                    <li><hr size=150></li>
+                                     <li><img src="images/4.png"></li>
+                                     <li><hr size=150></li>
+                                    <li><img src="images/5.png"></li>
+                                    </ul>
+                              </div>
+               <div class=tagContent  id=tagContent1>
+               		<ul class="imgs">
+                                    <li><img src="images/6.png"></li>
+                                    <li><hr size=150></li>
+                                    <li><img src="images/7.png"></li>
+                                    <li><hr size=150></li>
+                                    <li><img src="images/8.png"></li>
+                                    <li><hr size=150></li>
+                                     <li><img src="images/9.png"></li>
+                                     <li><hr size=150></li>
+                                    <li><img src="images/10.png"></li>
+                     </ul>
+               </div>
+               <div class=tagContent id=tagContent2>
+               		<ul class="imgs">
+                              <li><img src="images/11.png"></li>
+                              <li><hr size=150></li>
+                                    <li><img src="images/12.png"></li>
+                                    <li><hr size=150></li>
+                                    <li><img src="images/13.png"></li>
+                                    <li><hr size=150></li>
+                                     <li><img src="images/14.png"></li>
+                                     <li><hr size=150></li>
+                                    <li><img src="images/15.png"></li>
+                   </ul>
+               </div>
+               <div class=tagContent id=tagContent3>
+               		<ul class="imgs">
+                                 <li><img src="images/16.png"></li>
+                                 <li><hr size=150></li>
+                                    <li><img src="images/17.png"></li>
+                                    <li><hr size=150></li>
+                                    <li><img src="images/18.png"></li>
+                                    <li><hr size=150></li>
+                                     <li><img src="images/19.png"></li>
+                                     <li><hr size=150></li>
+                                    <li><img src="images/20.png"></li>
+                   </ul>
+               </div>
+
+      </div>
+    <div id="leftcontent-bottom">
+    <img src="images/leftcontent-bottom.png" width="1010" height="200"style="margin-top:10px"> 
+    <img src="images/leftcontent-bottom2.png" width="1010" height="200"style="margin-top:10px"> 
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+  <div id="rightcontent">
+  <img src="images/right1.png" width="237" height="354">
+   <img src="images/right2.png" width="237" height="354">
+    <img src="images/right3.png" width="237" height="354">
+     <img src="images/right4.png" width="237" height="354">
+   </div>
+</div>
+<div id="footer"><img src="images/bottom.png" width="1300" height="378"></div>
+</body>
+</html>
